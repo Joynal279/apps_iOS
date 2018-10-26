@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Shop By Category" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2q-Uj-OaY">
+                                <rect key="frame" x="1094" y="10" width="160" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20199172 (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H7J-rI-AMM">
+                                <rect key="frame" x="16" y="10" width="76" height="40"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" placeholder="Shop By category" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fj8-2H-K5p">
+                                <rect key="frame" x="120" y="10" width="239" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgB-5v-otj">
+                                <rect key="frame" x="0.0" y="77" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.068315385980000004" green="0.14168697790000001" blue="0.753351047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6l5-mk-dFt">
+                                <rect key="frame" x="14" y="77" width="109" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Special Offers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="special:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5a-kL-IGu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dU-Z3-Gk7">
+                                <rect key="frame" x="131" y="84" width="97" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Shoes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JU3-ZK-EnL"/>
+                                    <action selector="shoes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNO-sH-n4E"/>
+                                    <action selector="women:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4DE-jX-TQs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuh-Nr-kWf">
+                                <rect key="frame" x="221" y="79" width="80" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Teens">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="teens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6L-1D-Ols"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H3-LB-Np9">
+                                <rect key="frame" x="291" y="84" width="84" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Women">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="women:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4wx-b9-VGM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCE-3m-L23">
+                                <rect key="frame" x="6" y="159" width="170" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="OfX-d0-iw4" appends="YES" id="csg-ML-yb0"/>
+                                </connections>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="dYK-YG-jjO">
+                                <rect key="frame" x="36" y="250" width="303" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="303" id="9JV-V9-adw"/>
+                                    <constraint firstAttribute="height" constant="166" id="FrF-Mw-xic"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$12 15% Savings!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2g-nj-qBT">
+                                <rect key="frame" x="6" y="608" width="241" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1y8-Pz-Ywl">
+                                <rect key="frame" x="0.0" y="603" width="375" height="7"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H7J-rI-AMM" secondAttribute="trailing" constant="283" id="DbQ-pM-6pV"/>
+                            <constraint firstItem="H7J-rI-AMM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="Dke-dI-liX"/>
+                            <constraint firstItem="dYK-YG-jjO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ghg-oa-xiX"/>
+                            <constraint firstItem="H7J-rI-AMM" firstAttribute="top" secondItem="B2q-Uj-OaY" secondAttribute="top" id="Hq6-eq-B8k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H7J-rI-AMM" secondAttribute="bottom" constant="617" id="MgF-fg-FnW"/>
+                            <constraint firstAttribute="trailing" secondItem="B2q-Uj-OaY" secondAttribute="trailing" constant="-879" id="No9-Yp-frw"/>
+                            <constraint firstItem="dYK-YG-jjO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="Q9M-s9-o5A"/>
+                            <constraint firstItem="H7J-rI-AMM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="bmd-8X-cpo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H7J-rI-AMM" secondAttribute="trailing" constant="283" id="d9a-d4-2vx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H7J-rI-AMM" secondAttribute="bottom" constant="617" id="dPm-Fl-M7s"/>
+                            <constraint firstItem="B2q-Uj-OaY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="f8h-38-kmc"/>
+                            <constraint firstItem="H7J-rI-AMM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hZE-5b-vxN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dYK-YG-jjO" secondAttribute="bottom" constant="250.5" id="i6g-lk-auf"/>
+                            <constraint firstItem="dYK-YG-jjO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nJ3-Dd-Wvk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dYK-YG-jjO" secondAttribute="trailing" constant="36" id="vOr-TF-EjJ"/>
+                            <constraint firstItem="H7J-rI-AMM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yWe-tg-tdn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ayw-IM-usm" appends="YES" id="Ugb-uc-M0h"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="joy" destination="dYK-YG-jjO" id="MWQ-Q8-4JT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="ayw-IM-usm"/>
+                <rotationGestureRecognizer id="OfX-d0-iw4"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="20199172 (1).jpg" width="1000" height="1080"/>
+        <image name="download.jpeg" width="303" height="166"/>
+    </resources>
+</document>
